@@ -10,11 +10,15 @@ import sys
 import re
 
 # Collect words in a set
-word_set = set ()
+word_set = set()
 
-# File names
-read_file_name  = sys.argv[1]
-write_file_name = sys.argv[2]
+# File names can be written through console
+try:
+    read_file_name  = sys.argv[1]
+    write_file_name = sys.argv[2]
+except IndexError:
+    read_file_name  = 'Royal College Words.txt'
+    write_file_name = 'Royal College Output.txt'
 
 # File manipulation
 with open(read_file_name,'r', encoding = "utf8") as f:
@@ -46,4 +50,3 @@ with open(write_file_name,'w') as f:
         else: f.write(',')
         
 print('Total number of words: {}'.format(len(words)))
-
