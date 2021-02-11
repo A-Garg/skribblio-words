@@ -5,4 +5,4 @@ Original documents are from the Royal College of Physicians and Surgeons [intern
 
 The scripts, `extract_words.py` and `extract_words.R`, extract 5-letter-or-longer words from these files, alphabetize them, and return them separated by commas. Both the python and R scripts do the same thing; I wanted practice scripting in both languages.
 
-Sample output files are `Royal College Words.txt` and `CCFP output.txt`.
+Sample output files are `Royal College Output.txt` and `CCFP output.txt`.
